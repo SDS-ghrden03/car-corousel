@@ -1,0 +1,30 @@
+.image-slider__container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 80px;
+  position: relative;
+  width: inherit;
+}
+
+.slider-images {
+  height: 100%;
+  margin: 0 .1%;
+
+  &:hover {
+    outline: #62A60A solid 1px;
+    cursor: pointer;
+  }
+}
+
+.slider-icon {
+  color: #62A60A;
+  cursor: pointer;
+  transform: scale(1.8);
+  text-decoration: none;
+}
+
+.disabled-btn {
+  color: #e4e4e4;
+  cursor: auto;
+}

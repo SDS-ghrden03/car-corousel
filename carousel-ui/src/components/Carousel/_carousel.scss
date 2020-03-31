@@ -1,0 +1,63 @@
+.icon-styles {
+  background-color: #B6ADA9;
+  border-radius: 50%;
+  color: #FFF;
+  cursor: pointer;
+  line-height: 1;
+  text-indent: 0;
+  opacity: .5;
+  text-decoration: none;
+  top: 45%;
+  transform: scale(1.3);
+  z-index: 2;
+
+  &:hover {
+    background-color: #A3A19F;
+    opacity: 1;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  cursor: none;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.main-display__wrapper {
+  position: relative;
+}
+
+.current-img__display {
+  margin: 0 auto;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previous-arrow {
+  top: 40%;
+  left: 25px;
+  z-index: 2;
+  position: absolute;
+}
+
+.next-arrow {
+  position: absolute;
+  top: 40%;
+  right: 25px;
+  z-index: 1;
+}
+
+.image-slider {
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  // width: 300px;
+}
