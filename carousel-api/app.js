@@ -14,7 +14,6 @@ app.use(cors());
 // app.get('/', (req, res) => {
 //   res.render('index.html');
 // });
-
 // Get all Cars
 // app.get('/cars', async (req, res) => {
 //   console.log('request made for all 10M cars')
