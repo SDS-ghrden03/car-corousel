@@ -3,16 +3,16 @@ import { fetchData } from '../utils/fetchData';
 import { combineData } from '../utils/combineData';
 
 export const getAllCars = () => {
-  const carsUrl = process.env.REACT_APP_BACKEND_URL + '/cars';
-  const imagesUrl = process.env.REACT_APP_BACKEND_URL + '/images';
-  console.log(carsUrl);
+  const carsUrl = 'http://localhost:3001/cars/9876543';
+  // const imagesUrl = 'http://localhost:3001/images/';
   return async dispatch => {
     try {
       dispatch(setLoading(true));
       const allCars = await fetchData(carsUrl);
-      const allImages = await fetchData(imagesUrl);
+      // const allImages = await fetchData(imagesUrl);
       dispatch(setLoading(false));
-      const combinedData = combineData(allCars, allImages);
+      // const combinedData = combineData(allCars, allImages);
+      const combinedData = allCars;
       dispatch(setCars(combinedData));
     } catch (err) {
       dispatch(setError(err.message));

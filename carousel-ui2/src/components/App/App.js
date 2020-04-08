@@ -17,18 +17,17 @@ const App = () => {
     dispatch(getAllCars());
   }, []);
 
-  const findCar = id => {
-    const car = cars.find(car => car.id === id);
-    return car;
-  }
   return (
     <div className='app-container'>
-      <Route exact path='/' component={PageNotFound}/>
+      {/* <Route exact path='/' component={PageNotFound}/> */}
       {!loading ?
       <Switch>
-        <Route exact path='/cars/:id' render={({ match }) => {
+        <Route exact path='/' render={({ match }) => {
           const { id } = match.params;
-          const car = findCar(parseInt(id));
+          // const car = findCar(parseInt(9876543));
+          if (cars.length > 0) {
+            var car = cars[0]
+          }
           return car ? <Carousel {...car} /> : <PageNotFound />;
         }} />
       </Switch> :

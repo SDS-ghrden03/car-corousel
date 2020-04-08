@@ -25,7 +25,6 @@ export const Carousel = ({ images }) => {
 
   useEffect(() => {
   }, [current]);
-  console.log('############################');
 
   return (
     <div className='carousel-container'>
