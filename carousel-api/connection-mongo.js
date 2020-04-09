@@ -10,3 +10,5 @@ db.once('open', () => {
 db.on('error', (error) => {
   console.log('Error: ', error)
 })
+
+exports.module = db;
