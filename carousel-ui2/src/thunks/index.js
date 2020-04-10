@@ -3,7 +3,7 @@ import { fetchData } from '../utils/fetchData';
 import { combineData } from '../utils/combineData';
 
 export const getAllCars = () => {
-  const carsUrl = 'http://localhost:3001/cars/9876543';
+  const carsUrl = 'http://localhost:2999/cars/9876540';
   // const imagesUrl = 'http://localhost:3001/images/';
   return async dispatch => {
     try {
