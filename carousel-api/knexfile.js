@@ -1,7 +1,7 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost:5432/carsdb',
+    connection: process.env.DB_CONNECTION,
     migrations: {
       directory: './db/migrations'
     },
@@ -14,9 +14,9 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      database: 'carsdb',
-      user:     'trevorbell',
-      password: 'db2355'
+      database: process.env.DB_DB,
+      user:     process.env.DB_USER,
+      password: process.env.DB_PW
     },
     pool: {
       min: 2,

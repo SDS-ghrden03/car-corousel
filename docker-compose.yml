@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  carousel:
+    build:
+      context: .
+      args:
+        NEW_RELIC_KEY: ${NEW_RELIC_KEY}
+        DB_CONNECTION: ${DB_CONNECTION}
+        DB_DB: ${DB_DB}
+        DB_USER: ${DB_USER}
+        DB_PW: ${DB_PW}
+    ports:
+      - 3001:3001
+
+
+      
+

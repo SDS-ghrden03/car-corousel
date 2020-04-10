@@ -1,0 +1,30 @@
+{
+  "name": "car-carousel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "carousel-api/server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "minimist": "^1.2.5",
+    "newrelic": "^6.5.0",
+    "pg": "^8.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node carousel-api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDC-ghrden03/car-corousel.git"
+  },
+  "author": "Trevor Bell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDC-ghrden03/car-corousel/issues"
+  },
+  "homepage": "https://github.com/SDC-ghrden03/car-corousel#readme"
+}

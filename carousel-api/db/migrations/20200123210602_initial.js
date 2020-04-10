@@ -5,8 +5,6 @@ exports.up = function(knex) {
       table.string('make');
       table.string('model');
       table.integer('year');
-
-      table.timestamps(true, true);
     }),
     knex.schema.createTable('images', function (table) {
       table.increments('id').primary();
@@ -14,7 +12,6 @@ exports.up = function(knex) {
       table.integer('car_id').unsigned();
       table.foreign('car_id')
         .references('cars.id');
-      table.timestamps(true, true);
     })
   ]);
 };

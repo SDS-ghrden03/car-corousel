@@ -1,8 +1,8 @@
+require('dotenv').config()
 const newRelic = require('newrelic');
-import appPG from './appPG.js';
-import appMongo from './appMongo.js';
+const appPG = require('./appPG.js');
 
-
+console.log('port: ', process.env.PORT)
 appPG.set('port', process.env.PORT || 3001);
 // app.use(express.static(__dirname + "../carousel-ui2/dist"));
 
