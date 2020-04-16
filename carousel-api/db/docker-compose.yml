@@ -3,11 +3,11 @@ version: '3'
 services:
   postgres:
     image: postgres
-    restart: always
-    environment: 
-      POSTGRES_PASSORD: ${DB_PW}
+    container_name: postgres-carsDB
+    environment:
+      POSTGRES_USER: ${DB_USER} 
+      POSTGRES_PASSWORD: ${DB_PW}
       POSTGRES_DB: ${DB_DB}
-      POSTGRES_USER: ${DB_USER}
     ports:
       - 5432:5432
 

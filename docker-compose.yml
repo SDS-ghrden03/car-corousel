@@ -10,8 +10,9 @@ services:
         DB_DB: ${DB_DB}
         DB_USER: ${DB_USER}
         DB_PW: ${DB_PW}
+        NODE_ENV: ${NODE_ENV}
     ports:
-      - 3001:3001
+      - 80:3001
 
 
       

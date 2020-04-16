@@ -11,7 +11,7 @@ const createFakeCar = () => ({
 });
 
 exports.seed = async function(knex) {
-  var num = 1000
+  var num = 1
   while (num > 0) {
     fakeCars = batcher(knex);
     await knex('cars')

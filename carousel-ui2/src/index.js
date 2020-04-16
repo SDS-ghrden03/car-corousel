@@ -20,9 +20,9 @@ const store = createStore(
 );
 
 ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>,
+  // <Provider store={store}>
+  //   <BrowserRouter>
+      <App />,
+  //   </BrowserRouter>
+  // </Provider>,
   document.getElementById('car-carousel'));

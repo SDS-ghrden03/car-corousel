@@ -2,12 +2,17 @@ require('dotenv').config()
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost',
+    connection: {
+      host: 'ec2-54-215-239-234.us-west-1.compute.amazonaws.com',
+      database: process.env.DB_DB,
+      user:     process.env.DB_USER,
+      password: process.env.DB_PW,
+    },
     migrations: {
-      directory: './db/migrations'
+      directory: './carousel-api/db/migrations'
     },
     seeds: {
-      directory: './db/seeds/dev'
+      directory: './carousel-api/db/seeds/dev'
     },
     useNullAsDefault: true
   },
@@ -19,15 +24,17 @@ module.exports = {
       database: process.env.DB_DB,
       user:     process.env.DB_USER,
       password: process.env.DB_PW,
-      connectTimeout: 30000
     },
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
-    }
+      directory: './carousel-api/db/migrations'
+    },
+    seeds: {
+      directory: './carousel-api/db/seeds/dev'
+    },
   }
 
 };

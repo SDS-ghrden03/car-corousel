@@ -1,6 +1,7 @@
 exports.seed = async function(knex) {
-  var num = 10000
+  var num = 1
   while (num > 0) {
+    console.log(num, ' batches to go')
     fakeImages = imageBatcher(knex);
     await knex('images')
       .insert(fakeImages)
@@ -8,11 +9,11 @@ exports.seed = async function(knex) {
   }
 };
 
-var car_id = 1;
+var car_id = 9999205;
 
 var imageBatcher = function(knex) {
   const fakeImages = [];
-  const target = 1000;
+  const target = 796;
   for (var i = 0; i < target; i++) {
     var num = Math.floor(Math.random() * 6 + 3);
     while(num > 0) {

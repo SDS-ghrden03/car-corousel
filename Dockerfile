@@ -6,6 +6,7 @@ ARG DB_CONNECTION
 ARG DB_DB
 ARG DB_USER
 ARG DB_PW
+ARG NODE_ENV
 
 
 # Make a folder in your image where your app's source code can live
@@ -20,14 +21,14 @@ COPY . /src/app
 # Does your app have any dependencies that should be installed?
 RUN npm install
 
-# What port will the container talk to the outside world with once created?
-EXPOSE 3001
+EXPOSE 80
 
 ENV NEW_RELIC_KEY="${NEW_RELIC_KEY}"
 ENV DB_CONNECTION="${DB_CONNECTION}"
 ENV DB_DB="${DB_DB}"
 ENV DB_USER="${DB_USER}"
-ENV DB_PW="${DP_PW}"
+ENV DB_PW="${DB_PW}"
+ENV NODE_ENV="${NODE_ENV}"
 
 # How do you start your app?
 CMD [ "npm", "start" ]

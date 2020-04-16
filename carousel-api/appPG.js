@@ -2,14 +2,18 @@ const express = require('express');
 const cors = require('cors');
 
 const environment = process.env.NODE_ENV || 'development';
+console.log('environment: ', environment)
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
 const path = require('path');
+const morgan = require('morgan');
+
 
 const app = express();
 app.use(express.static(path.join(__dirname, '../carousel-ui2/dist')));
 app.use(express.json());
 app.use(cors());
+app.use(morgan('dev'));
 
 // app.get('/', (req, res) => {
 //   res.render('index.html');
