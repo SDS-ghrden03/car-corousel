@@ -8,7 +8,6 @@ ARG DB_USER
 ARG DB_PW
 ARG NODE_ENV
 
-
 # Make a folder in your image where your app's source code can live
 RUN mkdir -p /src/app
 

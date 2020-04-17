@@ -1,8 +1,8 @@
 config:
-  target: 'http://localhost:3001/cars/9876543'
+  target: 'http://ec2-18-144-38-11.us-west-1.compute.amazonaws.com/cars/9877743?url=http://car-carousel-lb-720227159.us-west-1.elb.amazonaws.com/'
   phases:
-    - duration: 60
-      arrivalRate: 1000
+    - duration: 20
+      arrivalRate: 500
   defaults:
     headers:
       x-my-service-auth: '987401838271002188298567'
