@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SDC-ghrden03/car-corousel.git"
+    "url": "git+https://github.com/SDC-ghrden03/car-carousel.git"
   },
   "author": "Trevor Bell",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SDC-ghrden03/car-corousel/issues"
+    "url": "https://github.com/SDC-ghrden03/car-carousel/issues"
   },
-  "homepage": "https://github.com/SDC-ghrden03/car-corousel#readme"
+  "homepage": "https://github.com/SDC-ghrden03/car-carousel#readme"
 }
