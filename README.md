@@ -45,7 +45,7 @@ I deployed this project using Docker and AWS.  The Dockerfiles and docker-compos
 
 ![Proxy Server Demo](Demo/car-carousel-proxy.gif)
 
-This [link will take you to that repository](
+This [link will take you to that repository](https://github.com/SDC-ghrden03/trevor-proxy)
 
 ## Built With
 * Node.js
