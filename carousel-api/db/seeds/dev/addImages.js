@@ -1,5 +1,5 @@
 exports.seed = async function(knex) {
-  var num = 1
+  var num = 1//How many times would you like to create a batch and insert it into the database
   while (num > 0) {
     console.log(num, ' batches to go')
     fakeImages = imageBatcher(knex);
@@ -9,11 +9,11 @@ exports.seed = async function(knex) {
   }
 };
 
-var car_id = 9999205;
+var car_id = 1;
 
 var imageBatcher = function(knex) {
   const fakeImages = [];
-  const target = 796;
+  const target = 1;//How many records do you want to include in each batch (Do not exceed 10,000 records in each batch)
   for (var i = 0; i < target; i++) {
     var num = Math.floor(Math.random() * 6 + 3);
     while(num > 0) {
