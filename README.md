@@ -1,5 +1,5 @@
 # Car Carousel
-This is a node.js image carousel, powered by React, Redux and Express that provides the basic styling and functions to display all images that are related to a single record (In this case a car).
+This is a node.js application, image carousel, powered by React, Redux and Express that provides the basic styling and functions to display all images that are related to a single record (In this case a car).
 
 ![Car carousel](Demo/car-carousel.gif)
 
