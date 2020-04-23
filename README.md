@@ -6,6 +6,13 @@ This is a node.js images carousel, powered by React, Redux and Express that prov
 ## Getting Started
 
 #### Prerequisites
+A couple of things that you will need installed on your machine (check out their documentaion for installation instuctions)
+
+1. [Postgresql](https://www.postgresql.org/download/)
+2. [Docker](https://www.docker.com/products/docker-desktop)
+
+##### Recommended
+* [Nodemon](https://nodemon.io/)
 
 #### Installing
 
@@ -23,5 +30,6 @@ I deployed this project using Docker and AWS, the Dockerfile
 * SCSS
 * Postgres
 * Knex
+* Docker
 
 ## License
