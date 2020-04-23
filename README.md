@@ -43,7 +43,7 @@ npx knex seed:run --env development
 
 I deployed this project using Docker and AWS.  The Dockerfiles and docker-compose files are included in this repository.  The database was deployed and populated with over 60 million records on an EC2 instance.  The service itself was deployed onto 5 seperate EC2 instances and were all connected using a load-balancer from AWS. I also deployed a redis-caching layer that improved response time, it is avaible in the following [repo-link.](https://github.com/SDC-ghrden03/redis-cache) This is a representation of a proxy server that served the car-carousel microservice as well as other microservices from project members to create a replica of a used car dealership car page. 
 
-![Proxy Server Demo](Demos/car-carousel-proxy.gif)
+![Proxy Server Demo](Demo/car-carousel-proxy.gif)
 
 This [link will take you to that repository](
 
