@@ -56,6 +56,7 @@ This [link will take you to that repository](https://github.com/SDC-ghrden03/tre
 * Postgres
 * Knex
 * Docker
+* AWS (Deployment)
 
 ## License
 MIT license [here](https://github.com/SDC-ghrden03/car-carousel/blob/master/LICENSE)
