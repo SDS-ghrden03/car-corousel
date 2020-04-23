@@ -2,12 +2,7 @@ require('dotenv').config()
 module.exports = {
   development: {
     client: 'pg',
-    connection: {
-      host: 'ec2-54-215-239-234.us-west-1.compute.amazonaws.com',
-      database: process.env.DB_DB,
-      user:     process.env.DB_USER,
-      password: process.env.DB_PW,
-    },
+    connection: 'postgres://localhost:5432/carsdb',
     migrations: {
       directory: './carousel-api/db/migrations'
     },
@@ -20,7 +15,7 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      host: 'ec2-54-215-239-234.us-west-1.compute.amazonaws.com',
+      host: 'localhost',
       database: process.env.DB_DB,
       user:     process.env.DB_USER,
       password: process.env.DB_PW,

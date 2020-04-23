@@ -2,7 +2,7 @@ require('dotenv').config()
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost',
+    connection: 'postgres://localhost:5432/carsdb',
     migrations: {
       directory: './db/migrations'
     },
@@ -15,7 +15,7 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      host: 'ec2-54-215-239-234.us-west-1.compute.amazonaws.com',
+      host: 'localhost',
       database: process.env.DB_DB,
       user:     process.env.DB_USER,
       password: process.env.DB_PW,
